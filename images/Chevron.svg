@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Chevron">
+<path id="Vector" d="M15 12L9 18" stroke="url(#paint0_linear_569_1248)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M15 12L9 6" stroke="url(#paint1_linear_569_1248)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_569_1248" x1="16.3285" y1="7.95275" x2="5.51898" y2="9.35211" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9958"/>
+<stop offset="1" stop-color="#F9FF72"/>
+</linearGradient>
+<linearGradient id="paint1_linear_569_1248" x1="16.3285" y1="1.95275" x2="5.51898" y2="3.35211" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9958"/>
+<stop offset="1" stop-color="#F9FF72"/>
+</linearGradient>
+</defs>
+</svg>

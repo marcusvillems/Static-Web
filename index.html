@@ -4,221 +4,384 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS/main.css">
 </head>
 <body>
-    <header>
-        <a class="logo" href="#"><img src="/images/Outl1ne logo.png" alt="Business logo"></a>
-        <ul class="primary-nav">
-            <li><a href="#"><img src="/images/Cart.png" alt=""></a></li>
-            <li><a href="#"></a>0</li>
-            <li><a href="#">Log In</a></li>
-            <li>English</li>
-            <li><img src="/images/Burgermenu.png" alt="Nav Menu"></li>
-        </ul>
-        <img class="landingImg" src="/images/Gradient.png" alt="Gradient image">
+    <header class="hero-section">
+            <nav>
+                <a class="logo" href="#"><img class="header-logo" src="/images/Outl1ne logo.png" alt="Business logo"></a>
+                <ul class="primary-nav">
+                    <li class="cart-img"><a href="#"><img class="cart" src="/images/Cart.png" alt=""></a></li>
+                    <li class="cart-nr"><a class="cart" href="#"></a>0</li>
+                    <li class="log-in"><a class="log" href="#"><p>Log In</p></a></li>
+                    <li class="lang" ><a  class="lang-selector" href="#">English</a></li>
+                    <li><a href="#"><img class="burger-menu" src="/images/Burgermenu.png" alt="Nav Menu"></a></li>
+                </ul>
+            </nav>
+        <section class="hero-box">
+                <img class="hero-img" src="/images/Gradient.png" alt="Gradient image">
+        </section>
+            <h1 class="left-col">
+                <ul class="hero-text">
+                    <li><p>Start your</p></li>
+                    <li><p>new</p></li>
+                    <li><p>journey</p></li>
+                </ul>
+            </h1>
+            <section class="right-column">
+            <section class="landing-sec">
+                <ul class="right-col">
+                    <section class="trip-border"></section>
+                    <li class="dep-box">
+                        <label for="departure">Departure</label>
+                        <select name="departure">
+                            <option value="tallinn">Vilnius</option>
+                            <option value="Tartu">Tartu</option>
+                            <option value="pärnu">Pärnu</option>
+                            <option value="vilnius">Tallinn</option>
+                            <option value="riga">Riga</option>
+                        </select>
+                    </li>
+                    <li class="des-box">
+                        <label for="destination">Destination</label>
+                        <select name="destination">
+                            <option value="tallinn">Tallinn</option>
+                            <option value="Tartu">Tartu</option>
+                            <option value="pärnu">Pärnu</option>
+                            <option value="vilnius">Vilnius</option>
+                            <option value="riga">Riga</option>
+                        </select>
+                    </li>
+                    <li class="date-box">
+                        <form class="date">
+                            <label for="date">Date</label>
+                            <input type="date">
+                        </form>
+                    </li>
+                    
+                    <li class="trip-box"><button type="button" class="trip-button"><p class="trip-text">Find a Trip</p></button></li>
+                </ul>
+                <img class="routeSwitch" src="/images/routeSwitch.png" alt="">
+            </section>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><img src="/images/Twitter.png" alt="Social media"></a></li>
+                    <li><a href="#" target="_blank"><img src="/images/Facebook.png" alt="Social media"></a></li>
+                    <li><a href="#" target="_blank"><img src="/images/Icon.png" alt="Social media"></a></li>
+                </ul>
+            </section>
+            <section class="scroll">
+                <img class="scroll-icon" src="/images/Scroll.png" alt="Scroll Icon">
+            </section>
     </header>
-    <section class="landing-sec">
-        <h1 class="left-col">Start your new journey</h1>
-        <ul class="right-col">
-            <li class="departure-box">
-                <label for="departure">Departure</label>
-                <select name="departure">
-                    <option value="tallinn">Tallinn</option>
-                    <option value="Tartu">Tartu</option>
-                    <option value="pärnu">Pärnu</option>
-                    <option value="vilnius">Vilnius</option>
-                    <option value="riga">Riga</option>
-                </select>
-            </li>
-            <img class="routeSwitch" src="/images/routeSwitch.png" alt="">
-            <li class="destination-box">
-                <label for="destination">Destination</label>
-                <select name="destination">
-                    <option value="tallinn">Tallinn</option>
-                    <option value="Tartu">Tartu</option>
-                    <option value="pärnu">Pärnu</option>
-                    <option value="vilnius">Vilnius</option>
-                    <option value="riga">Riga</option>
-                </select>
-            </li>
-            <br>
-            <li class="date-box">
-                <form>
-                    <label for="date">Date</label>
-                    <input type="date">
-                </form>
-            </li>
-            <br>
-            <li><button type="button" class="trip-button">Find a Trip</button></li>
-        </ul>
-
-        <ul class="social-links">
-            <li><a href="#" target="_blank"><img src="/images/Twitter.png" alt="Social media"></a></li>
-            <li><a href="#" target="_blank"><img src="/images/Facebook.png" alt="Social media"></a></li>
-            <li><a href="#" target="_blank"><img src="/images/Icon.png" alt="Social media"></a></li>
-        </ul>
-        <img class="scroll-icon" src="/images/Scroll.png" alt="Scroll Icon">
+<main class="news">
+    <section class="news-columns">
+    <article class="article-1">
+        <h1 class="article-head">Yo Reddit! What’s a small thing that anyone can do at nearly anytime to improve their mood and make </h1>
+        <p class="read">20 min read</p>
+        <p class="place-text">Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Dui nunc mattis enim ut tellus elementum sagittis vitae et. 
+            Amet mattis vulputate enim nulla aliquet. Volutpat diam ut venenatis tellus. At erat pellentesque adipiscing commodo elit at imperdiet dui. 
+            Odio pellentesque diam volutpat commodo sed egestas. </p>
+            <img class="chevron-btn1" src="/images/Chevron.png" alt="article button">
+    </article>
+    <section class="mobile-line">
+        <hr class="line1">
     </section>
-<article>
-    <h2>Yo Reddit! What’s a small thing that anyone can do at nearly anytime to improve their mood and make </h2>
-    <p>20 min read</p>
-    <p>Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Dui nunc mattis enim ut tellus elementum sagittis vitae et. 
-        Amet mattis vulputate enim nulla aliquet. Volutpat diam ut venenatis tellus. At erat pellentesque adipiscing commodo elit at imperdiet dui. 
-        Odio pellentesque diam volutpat commodo sed egestas. </p>
-        <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
-</article>
-<article>
-    <h2>The More Important the Work, the More Important the Rest</h2>
-    <p>20 min read</p>
-    <p>Physical space is often conceived in three linear dimensions, 
-    although modern physicists usually con
-    </p>
-    <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
-</article>
-<article>
-    <h2>Introducing: A brand new Dribbble</h2>
-    <p>20 min read</p>
-    <p>Physical space is often conceived in three linear dimensions, 
-    although modern physicists usually con
-    </p>
-    <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
-</article>
-<article>
-    <h2>The More Important the Work, the More Important the Rest</h2>
-    <p>10 min read</p>
-    <p>Physical space is often conceived in three linear dimensions, 
-    although modern physicists usually con
-    </p>
-    <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
-</article>
+    <section class="hidden-column">
+    <article class="article-2">
+        <h1 class="article-head">The More Important the Work, the More Important the Rest</h1>
+        <p class="read">20 min read</p>
+        <p class="place-text">Physical space is often conceived in three linear dimensions, 
+        although modern physicists usually con
+        </p>
+        <img class="chevron-btn2" src="/images/Chevron.png" alt="article button">
+        <hr class="line2">
+    </article>
+    <article class="article-3">
+        <h1 class="article-head">Introducing: A brand new Dribbble</h1>
+        <p class="read">20 min read</p>
+        <p class="place-text">Physical space is often conceived in three linear dimensions, 
+        although modern physicists usually con
+        </p>
+        <img class="chevron-btn3" src="/images/Chevron.png" alt="article button">
+        <hr class="line3">
+    </article>
+    
+    <article class="article-4">
+        <h1 class="article-head">The More Important the Work, the More Important the Rest</h1>
+        <p class="read">10 min read</p>
+        <p class="place-text">Physical space is often conceived in three linear dimensions, 
+        although modern physicists usually con
+        </p>
+        <img class="chevron-btn4" src="/images/Chevron.png" alt="article button">
+        <hr class="line4">
+    </article>
+</section>
+    <section class="news-mobile-img">
+        <section class="news-img-sec"></section>
+        <img class="article-img" src="/images/Vilnius.png" alt="Vilnius">
+        <section class="news-gradient"></section>
+        <p class="img-name">Vilnius</p>
+        <p class="img-text">price</p>
+        <p class="img-ftext">from</p>
+        <p class="image-price">98€</p>
+    </section>
+</section>
+<section class="hidden">
+    <article class="hidden-2">
+        <h1 class="article-head">The More Important the Work, the More Important the Rest</h1>
+        <p class="read">20 min read</p>
+        <p class="place-text">Physical space is often conceived in three linear dimensions, 
+        although modern physicists usually con
+        </p>
+        <img class="hidden-chevron-btn2" src="/images/Chevron.png" alt="article button">
+        <hr class="hidden-line2">
+    </article>
+    <hr class="hidden-line">
+    <article class="hidden-3">
+        <h1 class="article-head">Introducing: A brand new Dribbble</h1>
+        <p class="read">20 min read</p>
+        <p class="place-text">Physical space is often conceived in three linear dimensions, 
+        although modern physicists usually con
+        </p>
+        <img class="hidden-chevron-btn3" src="/images/Chevron.png" alt="article button">
+        <hr class="hidden-line3">
+    </article>
+    
+    <article class="hidden-4">
+        <h1 class="article-head">The More Important the Work, the More Important the Rest</h1>
+        <p class="read">10 min read</p>
+        <p class="place-text">Physical space is often conceived in three linear dimensions, 
+        although modern physicists usually con
+        </p>
+        <img class="hidden-chevron-btn4" src="/images/Chevron.png" alt="article button">
+        <hr class="hidden-line4">
+    </article>
+</section>
 
-<img src="/images/Vilnius.png" alt="Vilnius">
-<p>Vilnius</p>
-<p>price from</p>
-<p>98€</p>
+</main>
+<main class="Your-journey">
+    <h2 class="journey-head">Find Your Journey</h2>
 
-<h2>Find Your Journey</h2>
-<sub>Popular bus lines</sub>
+    <section class="journey-img">
+        <img src="/images/Gradient2.png" class="journey-grad">
+    </section>
+    <section class="bus-tables">
+        <sub class="bus">
+            <p class="sub-head-bus">Popular&nbspbus&nbsplines</p>
+        </sub>
+        <table class="bus-lines">
+            <tbody>
+            <tr class="bLine1">
+                <th class="bus-time1">2h 30min</th>
+                <th class="bus-route1">Klaipeda - Vilnius</th>
+                <th class="bus-range1">price range</th>
+                <th class="bus-price1">12 - 24 €</th>
+            </tr>
+            <tr class="bLine2">
+                <th class="bus-time2">2h 30min</th>
+                <th class="bus-route2">Tallinn - Tartu</th>
+                <th class="bus-range2">price range</th>
+                <th class="bus-price2">7 - 17 €</th>
+            </tr>
+            <tr class="bLine3">
+                <th class="bus-time3">2h 30min</th>
+                <th class="bus-route3">Pärnu - Tallinn</th>
+                <th class="bus-range3">price range</th>
+                <th class="bus-price3">6 - 15 €</th>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+    <section class="train-tables">
+        <sub class="train"><p class="sub-head-train">Popular&nbsptrain&nbsplines</p></sub>
+        <table class="train-lines">
+            <tbody>
+            <tr class="tLine1">
+                <th class="train-time1">2h 30min</th>
+                <th class="train-route1">Tallinn - Tartu</th>
+                <th class="train-range1">price range</th>
+                <th class="train-price1">7 - 18 €</th>
+            </tr>
+            <tr class="tLine2">
+                <th class="train-time2">2h 30min</th>
+                <th class="train-route2">Tartu - Ülemiste</th>
+                <th class="train-range2">price range</th>
+                <th class="train-price2">7 - 18 €</th>
+            </tr>
+            <tr class="tLine3">
+                <th class="train-time3">2h 30min</th>
+                <th class="train-route3">Tallinn-Väike - Viljandi</th>
+                <th class="train-range3">price range</th>
+                <th class="train-price3">7 - 17 €</th>
+            </tr>
+        </tbody>
+        </table>
+</section>
+</main>
+<main class="rec-destinations">
 
-<table class="bus-lines">
-    <tr class="bLine1">
-        <th>2h 30min</th>
-        <th>Klaipeda - Vilnius</th>
-        <th>price range</th>
-        <th>12 - 24 €</th>
-    </tr>
-    <tr class="bLine2">
-        <th>2h 30min</th>
-        <th>Tallinn - Tartu</th>
-        <th>price range</th>
-        <th>7 - 17 €</th>
-    </tr>
-    <tr class="bLine3">
-        <th>2h 30min</th>
-        <th>Pärnu - Tallinn</th>
-        <th>price range</th>
-        <th>6 - 15 €</th>
-    </tr>
-</table>
-
-<sub>Popular train lines</sub>
-
-<table class="train-lines">
-    <tr class="tLine1">
-        <th>2h 30min</th>
-        <th>Tallinn - Tartu</th>
-        <th>price range</th>
-        <th>7 - 18 €</th>
-    </tr>
-    <tr class="tLine2">
-        <th>2h 30min</th>
-        <th>Tartu - Ülemiste</th>
-        <th>price range</th>
-        <th>7 - 18 €</th>
-    </tr>
-    <tr class="tLine3">
-        <th>2h 30min</th>
-        <th>Tallinn-Väike - Viljandi</th>
-        <th>price range</th>
-        <th>7 - 17 €</th>
-    </tr>
-</table>
-
-<h2>Recommended destinations</h2>
+<section class="city-cards">
+    <ul class="city-images">
+        <li>
+            <section class="card1-line"></section>
+            <img class="card1" src="/images/Rectangle 6.png"></img>
+            <section class="card1-grad"></section>
+            <p class="city1">Vilnius</p>
+            <p class="city-text1">price</p>
+            <p class="city-ftext1">from</p>
+            <p class="city-price1">98€</p>
+        </li>
+        <li>
+            <section class="card2-line"></section>
+            <img class="card2" src="/images/Riga.png"></img>
+            <section class="card2-grad"></section>
+            <p class="city2">Riga</p>
+            <p class="city-text2">price</p>
+            <p class="city-ftext2">from</p>
+            <p class="city-price2">182€</p>
+        </li>
+        <li>
+            <section class="card3-line"></section>
+            <img class="card3" src="/images/Parnu.png"></img>
+            <section class="card3-grad"></section>
+            <p class="city3">Pärnu</p>
+            <p class="city-text3">price</p>
+            <p class="city-ftext3">from</p>
+            <p class="city-price3">98€</p>
+        </li>
+        <li>
+            <section class="card4-line"></section>
+            <img class="card4" src="/images/Tallinn.png"></img>
+            <section class="card4-grad"></section>
+            <p class="city4">Tallinn</p>
+            <p class="city-text4">price</p>
+            <p class="city-ftext4">from</p>
+            <p class="city-price4">127€</p>
+        </li>
+        <li>
+            <section class="card5-line"></section>
+            <img class="card5" src="/images/Helsinki.png"></img>
+            <section class="card5-grad"></section>
+            <p class="city5">Helsinki</p>
+            <p class="city-text5">price</p>
+            <p class="city-ftext5">from</p>
+            <p class="city-price5">142€</p>
+        </li>
+        <li>
+            <section class="card6-line"></section>
+            <img class="card6" src="/images/Stockholm.png"></img>
+            <section class="card6-grad"></section>
+            <p class="city6">Stockholm</p>
+            <p class="city-text6">price</p>
+            <p class="city-ftext6">from</p>
+            <p class="city-price6">186€</p>
+        </li>
+        <li>
+            <section class="card7-line"></section>
+            <img class="card7" src="/images/Sigulda.png"></img>
+            <section class="card7-grad"></section>
+            <p class="city7">Sigulda</p>
+            <p class="city-text7">price</p>
+            <p class="city-ftext7">from</p>
+            <p class="city-price7">94€</p>
+        </li>
+        <li>
+            <section class="card8-line"></section>
+            <img class="card8" src="/images/Kuressaare.png"></img>
+            <section class="card8-grad"></section>
+            <p class="city8">Kuressaare</p>
+            <p class="city-text8">price</p>
+            <p class="city-ftext8">from</p>
+            <p class="city-price8">123€</p>
+        </li>
+    </ul>
+</section>
+</main>
 
 <ul class="title">
     <li>Popular</li>
     <li>City</li>
     <li>Adventure</li>
 </ul>
+<h2 class="rec-header">Recommended destinations</h2>
 
-<ul class="city-cards">
-    <li>
-        <img src="/images/Vilnius.png"></img>
-        <p>Vilnius</p>
-        <p>price from</p>
-        <p>98€</p>
-    </li>
-    <li>
-        <img src="/images/Riga.png"></img>
-        <p>Riga</p>
-        <p>price from</p>
-        <p>182€</p>
-    </li>
-    <li>
-        <img src="/images/Parnu.png"></img>
-        <p>Pärnu</p>
-        <p>price from</p>
-        <p>98€</p>
-    </li>
-    <li>
-        <img src="/images/Tallinn.png"></img>
-        <p>Tallinn</p>
-        <p>price from</p>
-        <p>98€</p>
-    </li>
-</ul>
+<hr class="line">
+<hr class="line-grad">
 
-<footer>
-    <img src="/images/Outl1ne logo.png" alt="">
+<section class="rec-chevrons">
+    <p class="chevron-border1">
+        <img src="/images/Chevron1.svg" class="rec-chevron1">
+    </p>
+    <p class="chevron-border2">
+        <img src="/images/Chevron.svg" class="rec-chevron2">
+    </p>
+</section>
 
-    <h4>Travels</h4>
-    <ul>
-        <li>Journey Planner</li>
-        <li>Ticket Information</li>
-        <li>Stops</li>
-    </ul>
-    <h4>Company</h4>
-    <ul>
-        <li>About Us</li>
-        <li>Our Goals</li>
-        <li>Jobs</li>
-    </ul>
-    <h4>Contact</h4>
-    <ul>
-        <li>A. H. Tammsaare tee 56</li>
-        <li>+372 555 5555</li>
-        <li>info@outline.com</li>
-    </ul>
 
-    <h4>Newsletter</h4>
-    <form class="news">
-        <label for="">Your e-mail here</label><br>
-        <input type="text">
-        <button input type="submit">Subscribe</button>
-    </form>
-
-    <ul class="Terms">
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-    </ul>
-    <ul class="footer-socialLinks">
-        <li><a href="#" target="_blank"><img src="/images/Twitter.png" alt="Social media"></a></li>
-        <li><a href="#" target="_blank"><img src="/images/Facebook.png" alt="Social media"></a></li>
-        <li><a href="#" target="_blank"><img src="/images/Icon.png" alt="Social media"></a></li>
-    </ul>
-</footer>
-    
+<section class="page-grad"></section>
+<section class="page-grad2"></section>
+    <footer>
+        <section class="center-footer">
+            <section class="footer-content">
+                <img class="footer-logo" src="/images/Outl1ne logo.png" alt="">
+                <section class="footer-row1">    
+                    <h4 class="footer-header1">Travels</h4>
+                    <ul class="footer-column1">
+                        <li>Journey Planner</li>
+                        <li>Ticket Information</li>
+                        <li>Stops</li>
+                    </ul>
+                    <h4 class="footer-header2">Company</h4>
+                    <ul class="footer-column2">
+                        <li>About Us</li>
+                        <li>Our Goals</li>
+                        <li>Jobs</li>
+                    </ul>
+                    <h4 class="footer-header3">Contact</h4>
+                    <ul class="footer-column3">
+                        <li>A. H. Tammsaare tee 56</li>
+                        <li class="phone-grad">+372 555 5555</li>
+                        <li class="email-grad">info@outline.com</li>
+                    </ul>
+                    <section class="news-box"></section>
+                    <h4 class="footer-header4">Newsletter</h4>
+                    <section class="footer-btn">
+                <section class="subbox-outline">
+                    <section class="sub-box"></section>
+                </section>
+                    <form class="news">
+                        <input type="text" placeholder="Your email here">
+                        <section class="sub-btn">
+                        <button class="subscribe-btn" input type="submit"><p class="sub-text">Subscribe</p></button>
+                    </section>
+                    </form>
+                </section>
+                </section>
+                <ul class="Terms">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+                <ul class="footer-social">
+                    <li><a href="#" target="_blank"><img src="/images/Twitter.png" alt="Social media"></a></li>
+                    <li><a href="#" target="_blank"><img src="/images/Facebook.png" alt="Social media"></a></li>
+                    <li><a href="#" target="_blank"><img src="/images/Icon.png" alt="Social media"></a></li>
+                </ul>
+            </section>
+    </section>
+        <section class="small-ellipses">
+            <section class="small-circle1"></section>
+            <section class="small-circle2"></section>
+            <section class="small-circle3"></section>
+            <section class="small-circle4"></section>
+        </section>
+    <section class="big-ellipses">
+        <section class="circle1"></section>
+        <section class="circle2"></section>
+        <section class="circle3"></section>
+        <section class="circle4"></section>
+    </section>
+    </footer>
+        
 </body>
 </html>
