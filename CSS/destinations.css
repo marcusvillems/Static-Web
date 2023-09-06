@@ -8,17 +8,51 @@ main.rec-destinations {
 }
 
 h2.rec-header {
-    margin-top: 70px;
-    margin-left: 96px;
+    padding-top: 56px;
+    padding-left: 96px;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
 }
 
+section.rec-chevrons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 98px;
+    gap: 32px;
+}
+
+
+p.chevron-border1 {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #EBE8E5;
+}
+
+p.chevron-border2 {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: #181818;
+}
 ul.title {
     display: flex;
-    margin-top: 16px;
+    margin-top: 36px;
     margin-left: 96px;
     margin-right: 96px;
     width: 85%;
@@ -29,7 +63,6 @@ ul.title {
 
 hr.line {
     color: #eeecec;;
-    margin-top: 36px;
     margin-left: 96px;
     width: 86.5%;
     height: 4px;
@@ -51,6 +84,10 @@ section.city-cards {
     overflow-x: auto;
     display: flex;
 }
+
+section.city-cards::-webkit-scrollbar {
+    display: none;
+  }
 
 ul.city-images {
     display: flex;
@@ -76,7 +113,7 @@ section.card-line {
 p.city-text {
     display: flex;
     position: relative;
-    margin: 0;
+    margin-top: 138px;
     top: -180px;
     margin-left: 250px;
     color: #FFF;
