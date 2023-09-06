@@ -174,25 +174,3 @@ section.card-grad {
     border-radius: 0px 16px 16px 16px;
     background: var(--BG_Grad2);
 }
-
-/* 
-section.page-grad {
-    position: absolute;
-    right: 0px;
-    top: 2959px;
-    width: 96px;
-    height: 513px;
-    flex-shrink: 0;
-    background: var(--BG_PageGrad);
-}
-
-section.page-grad2 {
-    position: absolute;
-    margin-left: 0px;
-    top: 2959px;
-    width: 96px;
-    rotate: 180deg;
-    height: 513px;
-    flex-shrink: 0;
-    background: var(--BG_PageGrad);
-} */
