@@ -19,16 +19,7 @@ section.train-tables {
     justify-content: center;
 }
 
-table.bus-lines {
-    position: relative;
-}
-
-table.train-lines {
-    position: relative;
-}
-
 tbody {
-    position: relative;
     display: flex;
     flex-direction: row;
     column-gap: 24px;
@@ -56,7 +47,6 @@ h2.journey-head {
 }
 
 sub.bus {
-    position: relative;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -69,9 +59,9 @@ p.sub-head-bus {
     padding: 10px 0px 10px 0;
 }
 
-tr.bLine {
-    display: flex;
-    position: relative;
+tr.line {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     border-radius: 0px 16px 16px 16px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.10);
@@ -79,39 +69,35 @@ tr.bLine {
     width: 400px;
     height: 118px;
     margin-top: 20px;
-
 }
 
-th.bus-time {
+th.time {
     color: #EBE8E5;
     display: flex;
-    position: relative;
-    margin-top: 32px;
-    margin-left: 24px;
+    padding-top: 36px;
+    padding-left: 24px;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 18px;
 }
 
-th.bus-route {
+th.route {
     color: #EBE8E5;
     display: flex;
-    position: relative;
-    margin-top: 64px;
-    margin-left: -56px;
+    padding-bottom: 36px;
+    padding-left: 24px;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
 }
 
-th.bus-range {
+th.range {
     display: flex;
-    position: relative;
-    padding: 0px;
-    margin-top: 32px;
-    margin-left: 97px;
+    flex-direction: row-reverse;
+    padding-top: 36px;
+    padding-right: 24px;
     color: #EBE8E5;
     font-size: 14px;
     font-style: normal;
@@ -119,12 +105,11 @@ th.bus-range {
     line-height: 18px;
 }
 
-th.bus-price {
+th.price {
     display: flex;
-    position: relative;
-    padding: 0px;
-    margin-top: 64px;
-    margin-left: -91px;
+    flex-direction: row-reverse;
+    padding-bottom: 36px;
+    padding-right: 24px;
     color: #EBE8E5;
     font-size: 24px;
     font-style: normal;
@@ -141,62 +126,4 @@ sub.train {
 p.sub-head-train {
     padding: 20px 0px 20px 0px;
     margin-left: 96px;
-}
-
-tr.tLine {
-    display: flex;
-    position: relative;
-    border-radius: 0px 16px 16px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(8px);
-    width: 400px;
-    height: 118px;
-    flex-direction: row;
-
-}
-
-th.train-time {
-    color: #EBE8E5;
-    position: relative;
-    margin-top: 32px;
-    margin-left: 24px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 18px;
-}
-
-th.train-route {
-    color: #EBE8E5;
-    position: absolute;
-    margin-top: 64px;
-    margin-left: 23px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-}
-
-th.train-range {
-    position: relative;
-    margin-top: 32px;
-    margin-left: 223px;
-    color: #EBE8E5;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 18px;
-}
-
-th.train-price {
-    position: relative;
-    padding: 0px;
-    margin-top: 64px;
-    margin-left: -76px;
-    color: #EBE8E5;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
 }

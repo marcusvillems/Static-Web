@@ -87,7 +87,7 @@ section.city-cards {
 
 section.city-cards::-webkit-scrollbar {
     display: none;
-  }
+}
 
 ul.city-images {
     display: flex;
@@ -96,6 +96,11 @@ ul.city-images {
     margin-left: 96px;
     margin-right: 96px;
     margin-top: -418px;
+}
+
+img.card {
+    box-shadow: var(--OutlineWhite);
+    border-radius: 0px 16px 16px;
 }
 
 section.card-line {

@@ -10,6 +10,8 @@
     --BG_Grad2: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.70) 64.38%, rgba(24, 24, 24, 0.00) 100%);
     --BG_PageGrad: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
     --BShadow:  0px 8px 24px 0px rgba(75, 75, 75, 0.06), 0px 2px 4px 0px rgba(75, 75, 75, 0.02);
+    --Outline: #181818 8px 8px 1px 0px, grey 8.5px 8.5px 1.5px 0px;
+    --OutlineWhite: white 8px 8px 1px 0px, grey 8.5px 8.5px 1.5px 0px;
 }
 
 * {
@@ -34,8 +36,6 @@ body {
 header.hero-section {
     background: #181818;
     width: 100%;
-    height: 1200px;
-    flex-shrink: 0;
     box-sizing: border-box;
     color: white;
     border: none;
@@ -57,18 +57,11 @@ ul.primary-nav {
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 section.hero-cta {
     display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    flex-direction: row;
     align-items: center;
-    gap: 200px;
 }
 
 ul.hero-text {
@@ -78,16 +71,14 @@ ul.hero-text {
 }
 
 h1.left-col {
-    display: flex;
+    width: 420px;
     font-size: 96px;
     font-style: normal;
     flex-direction: column;
     font-weight: 500;
-    line-height: 15px;
     text-align: left;
-    padding-top: 254px;
-    padding-left: 86px;
-    margin: 0;
+    margin-left: 96px;
+    margin-right: auto;
 }
 
 select {
@@ -119,52 +110,26 @@ input {
 }
 
 label {
-    position: relative;
     color: #8B8595;
     font-family: Roboto, sans-serif;
+    position: absolute;
     z-index: 1;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
-    right: -10px;
-    top: 21px;
+    padding: 5px 0px 0px 10px;
 }
 
-section.landing-sec {
-    display: inline-flex;
+section.right-col {
+    margin-top: 150px;
+    margin-bottom: 166px;
     width: 400px;
-    height: 513px;
-    flex-shrink: 0;
+    height: 480px;
     border-radius: 10px 16px 16px 16px;
     border: 1px solid rgba(255, 255, 255, 0.30);
-    position: absolute;
-    align-items: flex-start;
-    flex-direction: column;
+    box-shadow: var(--Outline);
 }
 
-section.right-column {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-}
-
-ul.right-col {
-    display: inline-block;
-    width: 400px;
-    padding: 56px;
-    position: relative;
-    border-radius: 0px 16px 16px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(27, 27, 27, 0.10);
-    backdrop-filter: blur(12px);
-    padding-bottom: 46px;
-    margin-right: 16px;
-    bottom: 5%;
-    right: 4%;
-}
 
 img.cart {
     display: flex;
@@ -215,10 +180,8 @@ ul.social-links {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    padding-right: 0;
-    position: absolute;
-    right: 96px;
-    top: 425px;
+    margin-left: 64px;
+    margin-right: 96px;
 }
 
 button.trip-button {
@@ -227,6 +190,7 @@ button.trip-button {
     border-radius: 0px 16px 16px 16px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background:#181818;
+    box-shadow: var(--Outline);
 }
 
 p.trip-text {
@@ -241,16 +205,12 @@ p.trip-text {
     -webkit-text-fill-color: transparent;
 }
 
-li.dep-box {
-    margin-bottom: 24px;
-}
 
-li.des-box {
-    margin-bottom: 24px;
-}
-
-li.trip-box {
-    margin-top: 24px;
+ul.forms {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 56px;
 }
 
 section.trip-border {
@@ -267,23 +227,14 @@ section.trip-border {
 img.routeSwitch {
     position: absolute;
     width: 40px;
+    margin-top: 60px;
+    margin-left: 26px;
     height: 40px;
-    fill: rgba(255, 255, 255, 0.80);
-    stroke-width: 1.5px;
-    stroke: #8B8595;
-    backdrop-filter: blur(3.5px);
-    margin-top: 123px;
-    margin-left: 70px;
-    
-}
-
-img.scroll-icon {
-    margin-top: 566px;
+    z-index: 1;
 }
 
 section.scroll {
-    padding: 0;
-    margin: 0;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -295,7 +246,6 @@ footer {
     box-sizing: border-box;
     background: #181818;
     width: 100%;
-    height: 876px;
     flex-shrink: 0;
     border: solid 1px #181818;
     border-radius: 32px 32px 0px 0px;
@@ -315,13 +265,17 @@ section.footer-content {
     margin-left: auto;
     margin-right: auto;
     column-gap: 200px;
+    width: 100%;
     
 }
 
 section.footer-items {
     display: inline-flex;
-    column-gap: 159px;
+    column-gap: 200px;
     margin-top: 292px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 110px;
 }
 
 section.footer-left-col {
@@ -363,19 +317,22 @@ li.email-grad {
     -webkit-text-fill-color: transparent;
 }
 
-/* Outline'i paigutus
-section.news-box {
-    position: relative;
-    width: 280px;
-    height: 74px;
-    border-radius: 0px 16px 16px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    padding: 16px 141px;
-} */
-
 form.news {
     display: inline-flex;
     column-gap: 40px;
+}
+
+input.form-box {
+    display: inline-block;
+    font-size: large;
+    height: 72px;
+    width: 288px;
+    padding-left: 24px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 16px 16px 16px;
+    background: #FFF;
+    box-shadow:var(--Outline);
 }
 
 button.subscribe-btn {
@@ -386,6 +343,7 @@ button.subscribe-btn {
     border-radius: 0px 16px 16px 16px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: var(--color-must, #181818);
+    box-shadow: var(--Outline);
 }
 
 p.sub-text {
@@ -399,23 +357,13 @@ p.sub-text {
     -webkit-text-fill-color: transparent;
 }
 
-
-/* Outline'i paigutus
-section.sub-box {
-    width: 133px;
-    height: 74px;
-    border-radius: 0px 16px 16px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    top: 413px;
-    left: 161px;
-} */
-
 ul.Terms {
     display: inline-flex;
     column-gap: 40px;
     margin-top: 190px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 25px;
     opacity: 0.3;
     font-size: 16px;
     font-style: normal;
@@ -427,96 +375,107 @@ ul.Terms {
 }
 
 ul.footer-social {
-    display: inline-flex;
+    display: flex;
     margin-top: 22px;
     margin-left: auto;
     margin-right: auto;
 }
-section.circle1 {
+
+section.big-ellipses {
+    position: relative;
+    bottom: 865px;
+}
+
+hr.circle1 {
     position: absolute;
     left: -201px;
-    top: 777.83px;
-    width: 495.694px;
-    height: 495.518px;
+    top: 777px;
+    width: 495px;
+    height: 495px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
 
-section.circle2 {
+hr.circle2 {
     position: absolute;
-    left: -369.28px;
+    left: -369px;
     top: 635px;
-    width: 779.278px;
+    width: 779px;
     height: 779px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
-section.circle3 {
+hr.circle3 {
     position: absolute;
     left: -343px;
     top: 635px;
-    width: 779.278px;
+    width: 779px;
     height: 779px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
-section.circle4 {
+hr.circle4 {
     position: absolute;
     left: -318px;
     top: 635px;
-    width: 779.278px;
+    width: 779px;
     height: 779px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
-section.small-circle1 {
+section.small-ellipses {
+    position: relative;
+    top: 110px;
+}
+
+hr.small-circle1 {
     position: absolute;
     right: -8px;
-    bottom: 763.48px;
-    width: 173.792px;
-    height: 173.492px;
+    bottom: 763px;
+    width: 173px;
+    height: 173px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
 
-section.small-circle2 {
+hr.small-circle2 {
     position: absolute;
     right: -66px;
-    bottom: 714.25px;
-    width: 273.217px;
-    height: 272.745px;
+    bottom: 714px;
+    width: 273px;
+    height: 272px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
-section.small-circle3 {
+hr.small-circle3 {
     position: absolute;
     right: -57px;
-    bottom: 714.25px;
-    width: 273.217px;
-    height: 272.745px;
+    bottom: 714px;
+    width: 273px;
+    height: 272px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
 }
 
-section.small-circle4 {
+hr.small-circle4 {
     position: absolute;
     right: -48px;
-    bottom: 714.25px;
-    width: 273.217px;
-    height: 272.745px;
+    bottom: 714px;
+    width: 273px;
+    height: 272px;
     margin-right: 0px;
     border: 2px solid rgba(255, 255, 255, 0.10);
     border-radius: 25em;
