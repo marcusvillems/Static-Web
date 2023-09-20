@@ -1,7 +1,7 @@
 
 main.rec-destinations {
     width: 100%;
-    height: 870px;
+    height: 900px;
     flex-shrink: 0;
     background: #FFF;
     border-radius: 32px 32px 0px 0px;
@@ -95,24 +95,12 @@ ul.city-images {
     gap: 36px;
     margin-left: 96px;
     margin-right: 96px;
-    margin-top: -418px;
+    margin-top: 40px;
 }
 
 img.card {
     box-shadow: var(--OutlineWhite);
     border-radius: 0px 16px 16px;
-}
-
-section.card-line {
-    display: flex;
-    position: relative;
-    z-index: -1;
-    width: 340px;
-    top: 513px;
-    left: 12px;
-    height: 500px;
-    border-radius: 0px 16px 16px 16px;
-    border: 1px solid
 }
 
 p.city-text {
