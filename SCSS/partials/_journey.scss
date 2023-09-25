@@ -1,11 +1,10 @@
 main.Your-journey {
-    background: #181818;
+    background: var(--color-must);
     margin-top: -36px;
-    color: white;
+    color: var(--color-valge);
     width: 100%;
-    height: 608px;
     border-radius: 32px 32px 0px 0px;
-    border: solid 1px #181818;
+    border: solid 1px var(--color-must);
 }
 
 section.bus-tables {
@@ -18,12 +17,18 @@ section.train-tables {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 tbody {
     display: flex;
     flex-direction: row;
     column-gap: 24px;
+
+    @media screen and (max-width: 1360px) {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
 }
 
 section.journey-img {
@@ -73,7 +78,7 @@ tr.line {
 }
 
 th.time {
-    color: #EBE8E5;
+    color: var(--color-valge);
     display: flex;
     padding-top: 36px;
     padding-left: 24px;
@@ -84,7 +89,7 @@ th.time {
 }
 
 th.route {
-    color: #EBE8E5;
+    color: var(--color-valge);
     display: flex;
     padding-bottom: 36px;
     padding-left: 24px;
@@ -99,7 +104,7 @@ th.range {
     flex-direction: row-reverse;
     padding-top: 36px;
     padding-right: 24px;
-    color: #EBE8E5;
+    color: var(--color-valge);
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -111,7 +116,7 @@ th.price {
     flex-direction: row-reverse;
     padding-bottom: 36px;
     padding-right: 24px;
-    color: #EBE8E5;
+    color: var(--color-valge);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;

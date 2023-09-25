@@ -1,0 +1,23 @@
+
+
+  @media screen and (max-width: 1200px) {
+    section.footer-items {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: -200px;
+    }
+    section.footer-left-col {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    form.news {
+      flex-direction: column;
+      row-gap: 24px;
+      align-items: center;
+      margin: 0 auto;
+    }
+    section.small-ellipses {
+      bottom: -200px;
+    }
+  }
