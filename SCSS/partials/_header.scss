@@ -5,10 +5,9 @@
         color: var(--color-valge);
         display: flex;
         width: 100%;
-        height: 104px;
-        padding: 32px 96px 40px 96px;
+        padding: 32px 10% 40px 10%;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         flex-shrink: 0;
         margin: 0;
 
@@ -31,7 +30,6 @@
                 gap: 4px;
                 color: var(--color-valge);
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 600;
                 line-height: 10px;
             }
@@ -41,7 +39,6 @@
                 gap: 4px;
                 color: var(--color-valge);
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 600;
                 line-height: 24px;
             }
@@ -73,7 +70,6 @@
             color: var(--color-valge);
             width: 420px;
             font-size: 96px;
-            font-style: normal;
             flex-direction: column;
             font-weight: 500;
             text-align: left;
@@ -89,8 +85,6 @@
         .right-col {
             margin-top: 150px;
             margin-bottom: 166px;
-            width: 400px;
-            height: 480px;
             border-radius: 10px 16px 16px 16px;
             border: 1px solid rgba(255, 255, 255, 0.30);
             box-shadow: var(--Outline);
@@ -102,11 +96,9 @@
             
                 label {
                     color: #8B8595;
-                    font-family: Roboto, sans-serif;
                     position: absolute;
                     z-index: 1;
                     font-size: 14px;
-                    font-style: normal;
                     font-weight: 300;
                     padding: 5px 0px 0px 10px;
                 }
@@ -144,7 +136,6 @@
 
                     .trip-text {
                         font-size: 24px;
-                        font-style: normal;
                         font-weight: 600;
                         line-height: 32px;
                         margin: 0;

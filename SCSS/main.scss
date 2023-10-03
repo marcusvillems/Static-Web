@@ -1,9 +1,10 @@
+@use "../SCSS/partials/fonts";
 @use "../SCSS/partials/header";
 @use "../SCSS/partials/news";
 @use "../SCSS/partials/journey";
 @use "../SCSS/partials/destinations";
 @use "../SCSS/partials/footer";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 :root {
     --BG_Grad: -webkit-linear-gradient(#FF9958, #F9FF72);
@@ -18,7 +19,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
 }
