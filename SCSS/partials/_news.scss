@@ -92,6 +92,10 @@
         margin-top: 201px;
         border-radius: 0px 16px 16px 16px;
         background:  var(--BG_Grad2);
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .img-name {
@@ -103,6 +107,9 @@
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     
     .img-text {
@@ -114,6 +121,9 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 16px;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
     
     .image-price {
@@ -128,6 +138,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .article-img {
