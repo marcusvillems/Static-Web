@@ -15,6 +15,10 @@ main.Your-journey {
 
         .journey-grad {
             position: absolute;
+
+            @media (max-width: 580px) {
+                width: 100%;
+            }
         }
     }
 
@@ -24,6 +28,17 @@ main.Your-journey {
         font-size: 32px;
         font-weight: 500;
         line-height: 36px;
+
+        @media (max-width: 1120px) {
+            display: flex;
+            justify-content: center;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 400px) {
+            margin-top: 76px;
+            font-size: 28px;
+        }
     }
 
     .sub-head {
@@ -76,6 +91,14 @@ main.Your-journey {
         backdrop-filter: blur(8px);
         width: 400px;
         margin-top: 20px;
+
+        @media (max-width: 475px) {
+            width: 350px;
+        }
+
+        @media (max-width: 400px) {
+            width: 290px;
+        }
     }
     
     .time {
@@ -86,6 +109,11 @@ main.Your-journey {
         font-size: 14px;
         font-weight: 300;
         line-height: 18px;
+
+        @media (max-width: 475px) {
+            font-size: 12px;
+            padding-top: 26px;
+        }
     }
     
     .route {
@@ -96,6 +124,15 @@ main.Your-journey {
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
+
+        @media (max-width: 475px) {
+            font-size: 20px;
+            padding-bottom: 26px;
+        }
+        @media (max-width: 400px) {
+            font-size: 16px;
+            padding-bottom: 16px;
+        }
     }
     
     .range {
@@ -107,6 +144,11 @@ main.Your-journey {
         font-size: 14px;
         font-weight: 300;
         line-height: 18px;
+
+        @media (max-width: 475px) {
+            font-size: 12px;
+            padding-top: 26px;
+        }
     }
     
     .price {
@@ -118,5 +160,15 @@ main.Your-journey {
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
+
+        @media (max-width: 475px) {
+            font-size: 22px;
+            padding-bottom: 26px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 16px;
+            padding-bottom: 16px;
+        }
     }
 }

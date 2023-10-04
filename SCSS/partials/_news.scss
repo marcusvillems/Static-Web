@@ -41,10 +41,6 @@
         @media (max-width: 447px) {
             font-size: 18px;
         }
-
-        @media (max-width: 382px) {
-            font-size: 16px;
-        }
     }
     
     .read {
@@ -66,7 +62,7 @@
         }
 
         @media (max-width: 768px) {
-            font-size: 2vw;
+            font-size: 10px;
         }
     }
 
@@ -80,7 +76,11 @@
 
         @media (max-width: 768px) {
             width: 85%;
-            font-size: 2vw;
+            font-size: 12px;
+        }
+
+        @media (max-width: 447px) {
+            font-size: 10px;
         }
     }
 

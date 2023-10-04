@@ -11,6 +11,16 @@
         flex-shrink: 0;
         margin: 0;
 
+        .header-logo {
+            width: 100px;
+            height: auto;
+
+            @media (max-width: 595px) {
+                width: 75px;
+                height: auto;
+            }
+        }
+
         .primary-nav {
             display: flex;
             justify-content: flex-end;
@@ -81,6 +91,19 @@
                 text-align: center;
                 flex-shrink: 1;
             }
+            @media (max-width: 595px) {
+                font-size: 79px;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 69px;
+                width: 320px;
+            }
+
+            @media (max-width: 390px) {
+                font-size: 55px;
+                width: 290px;
+            }
         }
         .right-col {
             margin-top: 150px;
@@ -101,6 +124,10 @@
                     font-size: 14px;
                     font-weight: 300;
                     padding: 5px 0px 0px 10px;
+
+                    @media (max-width: 390px) {
+                        font-size: 12px;
+                    }
                 }
 
                 select, input {
@@ -108,13 +135,29 @@
                     font-size: large;
                     height: 72px;
                     width: 288px;
-                    padding: 24px;
+                    padding: 0px 24px;
                     justify-content: space-between;
                     align-items: center;
                     border-radius: 0px 16px 16px 16px;
                     background: var(--color-valge);
                     box-shadow: 0px 8px 24px 0px rgba(75, 75, 75, 0.06), 0px 2px 4px 0px rgba(75, 75, 75, 0.02);
                     backdrop-filter: blur(5px);
+
+                    @media (max-width: 500px) {
+                        width: 244px;
+                        height: 62px;
+                    }
+
+                    @media (max-width: 450px) {
+                        width: 222px;
+                        height: 62px;
+                    }
+
+                    @media (max-width: 390px) {
+                        width: 200px;
+                        height: 58px;
+                        font-size: medium;
+                    }
                 }
 
                 img.routeSwitch {
@@ -124,6 +167,12 @@
                     margin-left: 26px;
                     height: 40px;
                     z-index: 1;
+
+                    @media (max-width: 500px) {
+                        margin-top: 55px;
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
 
                 .trip-button {
@@ -143,7 +192,33 @@
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
+
+                        @media (max-width: 390px) {
+                            font-size: 20px;
+                        }
                     }
+
+                    @media (max-width: 500px) {
+                        width: 244px;
+                        height: 62px;
+                    }
+                    @media (max-width: 450px) {
+                        width: 222px;
+                        height: 52px;
+                    }
+
+                    @media (max-width: 390px) {
+                        width: 200px;
+                        height: 58px;
+                    }
+                }
+
+                @media (max-width: 425px) {
+                    padding: 56px 46px;
+                }
+
+                @media (max-width: 390px) {
+                    padding: 50px 35px;
                 }
             }
         
@@ -164,6 +239,15 @@
             gap: 16px;
             margin-left: 64px;
             margin-right: 96px;
+
+            img {
+                height: 32px;
+                width: auto;
+
+                @media (max-width: 390px) {
+                    height: 28px;
+                }
+            }
         
             @media (max-width:1109px) {
                     display: flex;
@@ -178,5 +262,15 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        
+        .scroll-icon {
+            height: 39px;
+            width: 20px;
+
+            @media (max-width: 390px) {
+                height: 29px;
+                width: 15px;
+            }
+        }
     }
 }
