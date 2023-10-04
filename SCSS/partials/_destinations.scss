@@ -1,7 +1,5 @@
 .rec-destinations {
     width: 100%;
-    height: 900px;
-    flex-shrink: 0;
     background: var(--color-valge);
     border-radius: 32px 32px 0px 0px;
 
@@ -11,6 +9,22 @@
         font-size: 32px;
         font-weight: 500;
         line-height: 36px;
+
+        @media (max-width: 1120px) {
+            display: flex;
+            justify-content: center;
+            padding-left: 0px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 28px;
+            justify-content: center;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 28px;
+            text-align: center;
+        }
     }
     
     section.rec-chevrons {
@@ -32,6 +46,11 @@
             border-radius: 48px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: #EBE8E5;
+
+            @media (max-width: 425px) {
+                width: 30px;
+                height: 30px;
+            }
         }
         
         .chevron-border2 {
@@ -45,6 +64,15 @@
             border-radius: 48px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: var(--color-must);
+
+            @media (max-width: 425px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 425px) {
+            gap: 18px;
         }
     }
     
@@ -97,6 +125,11 @@
             .card {
                 box-shadow: var(--OutlineWhite);
                 border-radius: 0px 16px 16px;
+
+                @media (max-width: 390px) {
+                    width: 272px;
+                    height: 400px;
+                }
             }
 
             .card-grad {
@@ -107,6 +140,10 @@
                 top: -100px;
                 border-radius: 0px 16px 16px 16px;
                 background: var(--BG_Grad2);
+
+                @media (max-width: 390px) {
+                    width: 272px;
+                }
             }
 
             .city {
@@ -118,6 +155,10 @@
                 font-size: 24px;
                 font-weight: 600;
                 line-height: 32px;
+
+                @media (max-width: 390px) {
+                    font-size: 20px;
+                }
             }
 
             .city-text {
@@ -130,6 +171,11 @@
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 16px;
+
+                @media (max-width: 390px) {
+                    font-size: 12px;
+                    margin-left: 193px;
+                }
             }
             
             .city-price {
@@ -145,6 +191,15 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                @media (max-width: 390px) {
+                    font-size: 22px;
+                }
+            }
+
+            @media (max-width: 425px) {
+                margin-left: 26px;
+                gap: 28px;
             }
         }
     }

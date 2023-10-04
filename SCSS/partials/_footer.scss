@@ -17,12 +17,17 @@ footer {
         column-gap: 200px;
         width: 100%;
         
-        img.footer-logo {
+        .footer-logo {
             width: 100px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 48px;
-            height: 21.818px;
+            height: auto;
+
+            @media (max-width: 660px) {
+                width: 75px;
+                height: auto;
+            }
         }
 
         .footer-items {
@@ -132,8 +137,7 @@ footer {
             display: inline-flex;
             column-gap: 40px;
             margin-top: 190px;
-            margin-left: auto;
-            margin-right: auto;
+            justify-content: center;
             padding-right: 25px;
             opacity: 0.3;
             font-size: 16px;
@@ -142,6 +146,13 @@ footer {
             background: var(--color-valge);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @media (max-width: 425px) {
+                column-gap: 20px;
+                text-align: center;
+                font-size: 14px;
+                padding-right: 15px;
+            }
         }
         
         .footer-social {
@@ -150,6 +161,15 @@ footer {
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 22px;
+
+            img {
+                height: 32px;
+                width: auto;
+
+                @media (max-width: 390px) {
+                    height: 28px;
+                }
+            }
         }
 
         .big-ellipses {
