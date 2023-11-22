@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/SCSS/main.css">
+    <title>Outl1ne</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
     <header class="hero-section">
         <nav class="top-nav-bar">
@@ -28,8 +30,8 @@
                         Log In
                     </a>
                 </li>
-                <li class="lang" >
-                    <a  class="lang-selector" href="#">English</a>
+                <li class="lang">
+                    <a class="lang-selector" href="#">English</a>
                 </li>
                 <li>
                     <a href="#">
@@ -93,13 +95,16 @@
     </header>
     <main class="news">
         <article class="article-left">
-            <h1 class="article-head">Yo Reddit! What’s a small thing that anyone can do at nearly anytime to improve their mood and make </h1>
+            <h1 class="article-head">Yo Reddit! What’s a small thing that anyone can do at nearly anytime to improve
+                their mood and make </h1>
             <p class="read">
                 20 min read
                 <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
             </p>
-            <p class="place-text">Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Dui nunc mattis enim ut tellus elementum sagittis vitae et. 
-                Amet mattis vulputate enim nulla aliquet. Volutpat diam ut venenatis tellus. At erat pellentesque adipiscing commodo elit at imperdiet dui. 
+            <p class="place-text">Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Dui nunc mattis
+                enim ut tellus elementum sagittis vitae et.
+                Amet mattis vulputate enim nulla aliquet. Volutpat diam ut venenatis tellus. At erat pellentesque
+                adipiscing commodo elit at imperdiet dui.
                 Odio pellentesque diam volutpat commodo sed egestas.
             </p>
             <section class="news-image">
@@ -118,8 +123,8 @@
                         20 min read
                         <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
                     </p>
-                    <p class="place-text">Physical space is often conceived in three linear dimensions, 
-                    although modern physicists usually con
+                    <p class="place-text">Physical space is often conceived in three linear dimensions,
+                        although modern physicists usually con
                     </p>
                 </article>
                 <article class="articles-right">
@@ -129,7 +134,7 @@
                         <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
                     </p>
                     <p class="place-text">
-                        Physical space is often conceived in three linear dimensions, 
+                        Physical space is often conceived in three linear dimensions,
                         although modern physicists usually con
                     </p>
                 </article>
@@ -140,7 +145,7 @@
                         <img class="chevron-btn" src="/images/Chevron.png" alt="article button">
                     </p>
                     <p class="place-text">
-                        Physical space is often conceived in three linear dimensions, 
+                        Physical space is often conceived in three linear dimensions,
                         although modern physicists usually con
                     </p>
                 </article>
@@ -229,56 +234,56 @@
         <section class="city-cards">
             <ul class="city-images">
                 <li>
-                    <img class="card" src="/images/Rectangle 6.png"></img>
+                    <img class="card" src="/images/Rectangle 6.png">
                     <section class="card-grad"></section>
                     <p class="city">Vilnius</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">98€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Riga.png"></img>
+                    <img class="card" src="/images/Riga.png">
                     <section class="card-grad"></section>
                     <p class="city">Riga</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">182€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Parnu.png"></img>
+                    <img class="card" src="/images/Parnu.png">
                     <section class="card-grad"></section>
                     <p class="city">Pärnu</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">98€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Tallinn.png"></img>
+                    <img class="card" src="/images/Tallinn.png">
                     <section class="card-grad"></section>
                     <p class="city">Tallinn</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">127€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Helsinki.png"></img>
+                    <img class="card" src="/images/Helsinki.png">
                     <section class="card-grad"></section>
                     <p class="city">Helsinki</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">142€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Stockholm.png"></img>
+                    <img class="card" src="/images/Stockholm.png">
                     <section class="card-grad"></section>
                     <p class="city">Stockholm</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">186€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Sigulda.png"></img>
+                    <img class="card" src="/images/Sigulda.png">
                     <section class="card-grad"></section>
                     <p class="city">Sigulda</p>
                     <p class="city-text">price from</p>
                     <p class="city-price">94€</p>
                 </li>
                 <li>
-                    <img class="card" src="/images/Kuressaare.png"></img>
+                    <img class="card" src="/images/Kuressaare.png">
                     <section class="card-grad"></section>
                     <p class="city">Kuressaare</p>
                     <p class="city-text">price from</p>
@@ -340,18 +345,27 @@
                 <li><a href="#" target="_blank"><img src="/images/Icon.png" alt="Social media"></a></li>
             </ul>
             <section class="big-ellipses">
-                <hr class="circle1"></hr>
-                <hr class="circle2"></hr>
-                <hr class="circle3"></hr>
-                <hr class="circle4"></hr>
+                <hr class="circle1">
+                </hr>
+                <hr class="circle2">
+                </hr>
+                <hr class="circle3">
+                </hr>
+                <hr class="circle4">
+                </hr>
             </section>
         </section>
         <section class="small-ellipses">
-            <hr class="small-circle1"></hr>
-            <hr class="small-circle2"></hr>
-            <hr class="small-circle3"></hr>
-            <hr class="small-circle4"></hr>
+            <hr class="small-circle1">
+            </hr>
+            <hr class="small-circle2">
+            </hr>
+            <hr class="small-circle3">
+            </hr>
+            <hr class="small-circle4">
+            </hr>
         </section>
     </footer>
 </body>
+
 </html>
